@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('tdld.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent background from repeating */
+  }
+  
+  #todo-app {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  #todo-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #todo-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Include box-shadow in transition */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Semi-transparent glow effect */
+}
+
+button:hover {
+    background-color: lightblue; /* Full opacity on hover */
+    box-shadow: lightblue; /* Increase glow effect on hover */
+}
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: #eaeaea;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+  .deleted-task {
+    background-color: #f44336 !important;
+    color: white;
+  }
+  
+  .undo-button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  /* Drag and Drop */
+  ul {
+    min-height: 50px;
+  }
+  
+  li.draggable {
+    cursor: pointer;
+  }
+  
+  /* Task Count */
+  #task-count {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Completed Count */
+  #completed-count {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Clear Completed Button */
+  #clear-completed {
+    display: block;
+    margin: auto;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #clear-completed:hover {
+    background-color: #d32f2f;
+  }
