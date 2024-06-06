@@ -1,7 +1,52 @@
-#results {
-    display:none;
+body{
+    background-color: green;
+   
 }
-*{
-    background-color: lightblue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+table{
+    width: 600px;
+    background-color: lightgreen;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+tr{
+    border: 1px solid black;
+    padding: 10px;
+}
+th{
+    border: 1px solid black;
+    padding: 10px;
+}
+td{
+    border: 1px solid black;
+    padding: 10px;
+}
+img{
+    padding: 10px;
+    border: 3px solid blue;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 20px;
+}
+caption{
+    display: inline-block;
+    position: relative;
+    left: 220px;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+}
+h1{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
 }
